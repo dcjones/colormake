@@ -1,0 +1,6 @@
+#!/bin/bash
+
+/usr/bin/make "$@" 2>&1 | colormake.py
+
+exit ${PIPESTATUS[0]}
+

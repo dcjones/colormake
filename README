@@ -1,0 +1,26 @@
+
+
+colormake
+---------
+
+A script to color the output of make,
+ripping-off colormake.pl by Bjarni R.
+Einarsson, with some changes and
+improvements.
+
+
+To install:
+    ./setup.py install
+
+Or, just copy 'colormake' and 'colormake.py' to somewhere in the path.
+
+Then, you may want to edit your bashrc, adding something like,
+    alias make='colormake'
+
+
+contact
+-------
+
+Daniel C. Jones <dcjones@cs.washington.edu>
+
+

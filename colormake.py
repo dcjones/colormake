@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 
 '''
-A rip-off of colormake.pl by Bjarni R. Einarsson,
-with some small changes and improvements.
+colormake
+---------
+
+A script to color the output of make,
+ripping-off colormake.pl by Bjarni R.
+Einarsson, with some small changes and
+improvements.
 
 Daniel C. Jones <dcjones@cs.washington.edu>
 2011.06.01.20.30
@@ -12,10 +17,8 @@ Daniel C. Jones <dcjones@cs.washington.edu>
 import sys
 import re
 
-# Some useful color codes, see end of file for more.
-#
-col_black =        '\033[30m'
-col_red =          '\033[31m'
+# Some useful color codes.
+
 col_green =        '\033[32m'
 col_yellow =       '\033[33m'
 col_blue =         '\033[34m'
