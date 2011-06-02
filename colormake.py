@@ -19,6 +19,8 @@ import re
 
 # Some useful color codes.
 
+col_black =        '\033[30m'
+col_red =          '\033[31m'
 col_green =        '\033[32m'
 col_yellow =       '\033[33m'
 col_blue =         '\033[34m'
