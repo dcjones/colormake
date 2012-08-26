@@ -18,6 +18,10 @@ Then, you may want to edit your bashrc, adding something like,
     alias make='colormake'
 
 
+To run tests:
+    ./setup.py test
+
+
 contact
 -------
 
