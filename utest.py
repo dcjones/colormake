@@ -6,7 +6,11 @@ import colormake as cm
 
 class TestBase(unittest.TestCase):
 
+    def setUp(self):
+        self.line = None
+
     def _check(self, color):
+        self.assertIsNotNone(self.line)
         lout = cm.line_add_color(self.line)
         self.assertEqual(lout, color + self.line + cm.col_norm)
 
