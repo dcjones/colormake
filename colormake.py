@@ -64,13 +64,20 @@ patterns = [
 patterns = [(re.compile(pat[0]),pat[1]) for pat in patterns]
 
 
-for line in iter(sys.stdin.readline, ''):
+def line_add_color(line):
+    line_out = ''
     for (pat, form) in patterns:
         if pat.match(line):
-            sys.stdout.write(form)
+            line_out += form
             break
 
-    sys.stdout.write(line)
-    sys.stdout.write(col_norm)
+    line_out += line
+    line_out += col_norm
+    return line_out
 
+
+if __name__ == '__main__':
+    for line in iter(sys.stdin.readline, ''):
+        line_color = line_add_color(line)
+        sys.stdout.write(line_color)
 
