@@ -66,6 +66,7 @@ patterns = [(re.compile(pat[0]),pat[1]) for pat in patterns]
 
 def line_add_color(line):
     line_out = ''
+    line = line.rstrip()
     for (pat, form) in patterns:
         if pat.match(line):
             line_out += form
@@ -73,6 +74,7 @@ def line_add_color(line):
 
     line_out += line
     line_out += col_norm
+    line_out += '\n'
     return line_out
 
 
